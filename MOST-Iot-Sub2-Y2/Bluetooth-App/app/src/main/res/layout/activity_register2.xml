@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mira.example.com.a2017617iot1.Register">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".EdiTextActivty" >
+
+        <EditText
+            android:id="@+id/etReg_Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:hint="Account:Email" />
+
+        <EditText
+            android:id="@+id/etReg_Password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:maxLength="16"
+            android:textSize="25sp"
+            android:hint="@string/password" />
+
+        <EditText
+            android:id="@+id/etReg_Password2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:hint="@string/confirmationpassword" />
+
+        <EditText
+            android:id="@+id/etReg_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:hint="Name" />
+
+        <Button
+            android:id="@+id/bRegister_confirm"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="30sp"
+            android:text="@string/submit"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

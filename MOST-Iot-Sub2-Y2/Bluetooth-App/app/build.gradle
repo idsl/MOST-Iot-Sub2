@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.example.popyue.myapplication"
+        applicationId "com.a2017617iot1"
+        applicationId "com.cwsu.client"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'PrivateResource'
+    }
+    productFlavors {
+    }
+}
+//sub_project5
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    testCompile 'junit:junit:4.12'
+    //sub_project5
+    //compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.mcxiaoke.volley:library:1.0.0'
+    compile 'com.github.brake.threegpp:milenage:1.0.0'
+    compile 'com.jjoe64:graphview:4.2.1'
+    compile files('libs/bcprov-jdk15on-157.jar')
+    compile files('libs/common-lang3.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.5'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //sub_project1
+    //compile 'com.android.support:recyclerview-v7:25.3.1'
+    // compile 'com.android.support:appcompat-v7:25.3.1'
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+}

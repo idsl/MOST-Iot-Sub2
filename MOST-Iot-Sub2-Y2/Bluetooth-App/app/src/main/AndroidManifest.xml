@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.popyue.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="藍牙安全狀態檢視"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="藍牙資料亂度檢測(NIST-800-22-SP)藍牙安全狀態檢視"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.a2017617iot1.Login" />
+        <activity android:name="com.a2017617iot1.Login_captcha" />
+        <activity android:name="com.a2017617iot1.Register" />
+        <activity android:name="com.a2017617iot1.Register_captcha" />
+        <activity android:name="com.a2017617iot1.Menu_admin" />
+        <activity android:name="com.a2017617iot1.Menu_normal" />
+        <activity android:name="com.a2017617iot1.Authority_add_user" />
+        <activity android:name="com.a2017617iot1.Authority_add_device" />
+        <activity android:name="com.a2017617iot1.Manage_account" />
+        <activity android:name="com.a2017617iot1.Forget_account" />
+        <activity android:name="com.a2017617iot1.Authorized_device" />
+        <activity android:name="com.a2017617iot1.Manage_authorized" />
+        <activity
+            android:name="com.bluetooth.Bluetooth"
+            android:label="藍牙安全狀態檢視" />
+        <activity
+            android:name="com.bluetooth.Statistic_test"
+            android:label="藍牙資料亂度檢測(NIST-800-22-SP)" />
+        <activity android:name="com.cwsu.client.LoginActivity" />
+        <activity android:name="com.cwsu.client.RegisterActivity" />
+        <activity android:name="com.cwsu.client.GetDataActivity" />
+        <activity android:name="com.cwsu.client.SensorActivity" />
+
+    </application>
+
+</manifest>

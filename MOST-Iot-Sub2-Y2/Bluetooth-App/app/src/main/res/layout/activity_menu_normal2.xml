@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a2017617iot1.Menu_normal">
+
+    <AbsoluteLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:text="合法裝置列表"
+            android:id="@+id/bAuthorized_device"
+            android:background="@drawable/btn_blue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_x="150px"
+            android:layout_y="300px"
+            android:layout_margin="20dp"
+            style="@style/ButtonText">
+        </Button>
+
+        <Button
+            android:text="帳號管理"
+            android:id="@+id/bManage_account"
+            android:background="@drawable/btn_blue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_x="150px"
+            android:layout_y="600px"
+            android:layout_margin="20dp"
+            style="@style/ButtonText">
+        </Button>
+
+        <Button
+            android:text="藍牙傳輸安全檢測"
+            android:id="@+id/bBlutooth"
+            android:background="@drawable/btn_blue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_x="150px"
+            android:layout_y="900px"
+            android:layout_margin="20dp"
+            style="@style/ButtonText">
+        </Button>
+    </AbsoluteLayout >
+
+</RelativeLayout>

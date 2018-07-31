@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statistic_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/statistic_text"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="不通過亂度檢測項目數：4/16\n風險程度：低"
+        android:textAlignment="center"
+        android:textColor="#2B5B82"
+        android:textSize="19sp"
+        android:background="#F8D7DA"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="Frequency"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_1"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="通過"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Cusum-Forward"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_2"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Cusum-Reverse"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_3"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Runs"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_4"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Long Runs of Ones"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_5"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Rank"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_6"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Spectral DFT"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_7"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Non-overlapping Templates"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_8"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Overlapping Templates"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_9"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Universal"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_10"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Approximate Entropy"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_11"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Random Excursions"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_12"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Random Excursions Variant"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_13"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Linear Complexity"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_14"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Serial"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/statistic_15"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#2B5B82"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+        </TableLayout>
+
+
+    </ScrollView>
+</LinearLayout>
